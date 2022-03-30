@@ -16,8 +16,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $country = Country::find(1);	
-        echo ($country->posts);
+        // $country = Country::find(2);	
+        // echo ($country->posts);
+        $post = Post::find(2);	
+        echo ($post->user->name);
     }
 
     /**
